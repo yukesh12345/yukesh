@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.slidecontainer {
+  width: 100%;
+  text-align: center
+}
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background:light green;
+    color:black;
+}
+
+header {
+    background:#35e3c9;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero {
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.btn {
+    background: white;
+    color: orange;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #005fa3;
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project {
+    background: light red;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.project p {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: grey;
+    color: white;
+}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</style>
+</head>
+<body>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    console.log(Name: ${name}, Email: ${email}, Message: ${message});
+
+    // Clear the form fields
+    this.reset();
+    alert('Thank you for your message!');
+});
+</script>
+
+  
+    <header>
+        <div class="hero">
+            <h1>YUKESH M</h1>
+            <p> UI/UX Designer | Software Developer|Web Developer </p>
+            <a href="#Home" class="btn">Home</a>
+            <a href="#About" class="btn">About</a>
+            <a href="#Skills" class="btn">Skills</a>
+            <a href="#Language" class="btn">Language</a>
+            <a href="#projects" class="btn"> Projects</a>
+            <a href="#Contact" class="btn">Contact</a>
+   </div>
+    </header>
+
+    <main>
+
+<section id="Home">
+            <h2>Home</h2>
+            <div class="Home-grid">
+                   <div class="Home">
+                    <p>NAME:Yukesh M</p>
+                    <p>DOB:01-October-2003</p>
+                    <p>COLLEGE/UNIVERSITY: PSNA College Of Engineering And Technology</p>
+                    <p>COURSE: B.TECH Information Technology</p>
+                    <p>E-MAIL:yukeshm01@gmail.com </p>
+                    <p>CITY: Dindugal</p>
+                </div>
+                 </div>
+        </section>
+           
+        <section id="About">
+            <h2>About</h2>
+            <div class="About-grid">
+                   <div class="About">
+                    <p>I'm a developer,UI/UX Designer and passionate about creating beautiful and functional realtime websites.I'm passionate in my carrier to develop more innovative ideas and establish my talent.To showcase my diverse skills in web development and design, demonstrating my ability to create innovative and user-friendly digital solutions that solve real-world problems.</p>
+                   </div>
+                 </div>
+        </section>
+ 
+          <section id="Skills">
+             <h2>Skills</h2>
+            <div class="Skills-grid">
+                   <div class="Skills">
+                    <p>Communication</p>
+                    <p>Leadership</p>
+                    <p>Windows</p>
+                    <p>Visual Studio</p>
+                    <p>Word</p>
+                </div>
+                 </div>
+        </section>
+
+       <section id="Language">
+             <h2>Language</h2>
+            <div class="Language-grid">
+                   <div class="Language and Database">
+                    <p>UI/UX Designing</p>
+                          <div class="slidecontainer">
+                           <input type="range" min="1" max="100" value="100">
+                    <p>web Development</p>
+                          <div class="slidecontainer">
+                          <input type="range" min="1" max="100" value="100">
+                    <p>Java</p>
+                         <div class="slidecontainer">
+                         <input type="range" min="1" max="100" value="100">
+                    <p>Mysql</p>
+                         <div class="slidecontainer">
+                          <input type="range" min="1" max="100" value="100">
+                  </div>
+                 </div>
+        </section>
+
+
+
+        <section id="projects">
+            <h2> E-COMMERCE APPLICATION USING UI/UX </h2>
+            <div class="project-grid">
+                   <div class="project">
+                    <img src="https://rvtechnologies.com/assets/images/logistics_demand4.webp" alt="Project 1 ">
+                     
+                    <p>It is an E-Commerce Application based on UI/UX.It is the project on transportation.The passengers can easily book or prefer their comfortable seats by easy pre-booking through this app.</p>
+                </div>
+                 </div>
+        </section> 
+      
+          <section id="projects 2">
+            <h2>E-COMMERCE APPLICATION USING UI/UX</h2>
+            <div class="project-grid">
+                   <div class="project">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKRwpPLHj-SpjW-D-Wf5UC0n18cl4e04OKHuvmIdp1vZaz5pxcnoXJKF8VCWJyPZ_4V6U&usqp=CAU" alt="Project 2">
+                     <p>To avoid road accidents due to natural cause like heart attack..</p>
+                </div>
+                 </div>
+        </section>   
+         
+        <section id="projects 3">
+            <h2>ASI LANGUAGE DETECTION AND CONVERSION TO SPEECH AND TEXT</h2>
+            <div class="project-grid">
+                   <div class="project">
+                    <img src="https://editor.analyticsvidhya.com/uploads/43614download%20(1).png" alt="Project 3">
+                    <p>An app in wich helps deaf and dumb people to connect with everyone without any kind of barriers.</p>
+                </div>
+                 </div>
+        </section> 
+
+
+        <section id="Contact">
+            <h2>Contact </h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My  Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
